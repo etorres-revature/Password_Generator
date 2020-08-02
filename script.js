@@ -46,7 +46,7 @@ generateBtn.addEventListener("click", writePassword);
 function writePassword() {
   //create a variable to collect the return from the passwordCharacters function, whcih will determine which characters are available for the new password
   var truePrompts = passwordCharacters();
-  var falsePrompts = alert("You have not chosen any characters with which to create the new password")
+  var falsePrompts = "You have not chosen any characters with which to create the new password";
   //creating the variable associated with returning the new password to the text area in the HTML
   var passwordText = document.querySelector("#password");
   //if passwordCharacters returns true then this logic will run
@@ -119,7 +119,7 @@ function passwordCharacters() {
       choice = choice.concat(special);
     //logic for if all confirms are cancelled to alert user that they have to choose a character set to create the new password
     } else if (!hasLower && !hasUpper && !hasNumber && !hasSpecial) {
-      alert("You have not chosen any characters to create your new password")
+      return false;
     }
     return true;
   }
