@@ -1,12 +1,8 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html,
-body,
-.wrapper {
+html, body, .wrapper {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -14,7 +10,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: black;
 }
 
 .wrapper {
@@ -32,9 +28,11 @@ header {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  border-radius: 15px;
+  /* border-width: 50px; */
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px; */
+  border: 25px;
+  border-color: red;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
@@ -76,8 +74,7 @@ header {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
@@ -118,13 +115,55 @@ button[disabled] {
   overflow: hidden;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: .65;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-right: 5px;
+}
+
+.fa-github {
+  background: #2c4762;
+  color: white;
+  margin-left: 5px;
+}
+
+#copyright {
+  color: white;
+  text-align: center;
+}
+
+#social-media {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+#e_mail {
+  color: white;
+  text-align: center
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
-
   #password {
     font-size: 1rem;
   }
