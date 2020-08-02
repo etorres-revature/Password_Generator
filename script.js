@@ -36,32 +36,33 @@ let choice = [];
 //  return special[Math.floor(Math.random() * special.length)];
 //}
 
-// Assignment Code
+// Assignment Code - establishes a variable assigned to the "Generate Password" button in the html
 var generateBtn = document.querySelector("#generate");
 
-// Add event listener to generate button
+// Add event listener to generate button - creates an event listener associated with the above variable
 generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  var correctPrompts = getprompts();
+  var truePrompts = passwordCharacters();
   var passwordText = document.querySelector("#password");
-  if (correctPrompts) {
+  if (truePrompts) {
     var newPassword = generatePassword();
     passwordText.value = newPassword;
+    return passwordText;
   }
 }
 
 function generatePassword() {
   var password = "";
   for (var i = 0; i < passwordLength; i++) {
-    var randomCharacter = Math.floor(Math.randon() * choice.length)
+    var randomCharacter = Math.floor(Math.random() * choice.length)
     password = password + choice[randomCharacter];
   }
   return password;
 }
 
-function prompts() {
+function passwordCharacters() {
   choice = [];
   passwordLength = prompt("Please choose a length for you password \nPasswords must be a minimum of 8 characters and a maximum of 128 characters.");
   if (isNaN(passwordLength)) {
