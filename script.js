@@ -54,7 +54,7 @@ function writePassword() {
     //creating variable to hold new password
     //will run the generatePassword funciton
     var newPassword = generatePassword();
-    //assigning the newPassword variable, which has been assigned the random password creatied by the generatePassword funciton as the value for passwordText variable
+    //assigning the newPassword variable, which has been assigned the random password created by the generatePassword funciton as the value for passwordText variable
     //this is what will make is show up in the text area on the HTML
     passwordText.value = newPassword;
   } else {
@@ -74,7 +74,7 @@ function generatePassword() {
     //taking the password variable form the function and concatenating it with the character in the chocie array at randomCharacter index
     password = password + choice[randomCharacter];
   }
-  //having the return of the function to be the passwor, which will go into the newPassword variable in writePassword funciton above
+  //having the return of the function to be the password, which will go into the newPassword variable in writePassword funciton above
   return password;
 }
 
