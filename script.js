@@ -83,7 +83,7 @@ function passwordCharacters() {
   choice = [];
   //uses the passwordLength variable to display a prompt to get the users desired password length
   //variable is created outside of the function so that its value will be held even after the funciton has run
-  passwordLength = prompt("Please choose a length for you password \nPasswords must be a minimum of 8 characters and \na maximum of 128 characters.");
+  passwordLength = prompt("Please choose a length for you password \nPasswords must be a minimum of 8 characters \nand a maximum of 128 characters.");
  //since the passwordLength must be a number this logic will alert the user to enter a number if he/she tries to enter a string value
   if (isNaN(passwordLength)) {
     alert("Please enter a numerical value.");
