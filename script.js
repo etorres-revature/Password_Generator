@@ -46,6 +46,7 @@ generateBtn.addEventListener("click", writePassword);
 function writePassword() {
   //create a variable to collect the return from the passwordCharacters function, whcih will determine which characters are available for the new password
   var truePrompts = passwordCharacters();
+  var falsePrompts = alert("You have not chosen any characters with which to create the new password")
   //creating the variable associated with returning the new password to the text area in the HTML
   var passwordText = document.querySelector("#password");
   //if passwordCharacters returns true then this logic will run
@@ -56,8 +57,8 @@ function writePassword() {
     //assigning the newPassword variable, which has been assigned the random password creatied by the generatePassword funciton as the value for passwordText variable
     //this is what will make is show up in the text area on the HTML
     passwordText.value = newPassword;
-    //making the return of the function passwordText variable
-    return passwordText;
+  } else {
+    passwordText.value = falsePrompts;
   }
 }
 
@@ -116,6 +117,9 @@ function passwordCharacters() {
     //if logic so that when hasSpecial variabgle is true the lower case array of letter will be added to the choice array
     if (hasSpecial) {
       choice = choice.concat(special);
+    //logic for if all confirms are cancelled to alert user that they have to choose a character set to create the new password
+    } else if (!hasLower && !hasUpper && !hasNumber && !hasSpecial) {
+      alert("You have not chosen any characters to create your new password")
     }
     return true;
   }
