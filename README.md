@@ -81,7 +81,7 @@ Bootstrtap 4 is a free and open-source CSS framework directed at responsive, mob
 
 Bootstrap 4 content borrowed from <a target="_blank" rel="noopener noreferrer">[this page](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)).</a>
 
-#### JavaSctrit
+#### JavaScript
 
 <p align="justify">
 JavaScript(JS) is one of the core technologies of the World Wide Web (along with HTML and CSS). It ienables interactive web pages and is an essential part of web applications.  JS is a multi-faceted, scripting language that provides versatility through Application Programming Interfaces (APIs) and Documetn Object Model (DOM) manipulation, among others.</p>
