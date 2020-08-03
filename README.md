@@ -91,7 +91,7 @@ This product is unlicensed.
 
 <a name="footnote1">[footnote 1](https://www.metacompliance.com/blog/5-damaging-consequences-of-a-data-breach/)</a>
 
-<a name="footnote2">[footnote 2](https://www.mentalfloss.com/article/504786/8-tips-make-your-passwords-strong-possible))</a>
+<a name="footnote2">[footnote 2](https://www.mentalfloss.com/article/504786/8-tips-make-your-passwords-strong-possible)</a>
 
 
 
