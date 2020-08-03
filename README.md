@@ -15,7 +15,7 @@ Try the <a>[Password Generator](https://etorres-revature.github.io/Password_Gene
     * legal fees :money_with_wings:
     * regulatory penalties :money_with_wings:
 
-2. :face_punch: Reputatoinal Damage :face_punch:
+2. :facepunch: Reputatoinal Damage :facepunch:
     * loss of customers :thumbsdown:
     * bad word of mouth :thumbsdown:
     * long-lasting  :thumbsdown:
