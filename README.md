@@ -2,14 +2,22 @@
 
 <p align="justify">As technology has become more ubiquitous in our everyday lives, so to has the proliferation of cyber-crime in the form of malware, ransomware, and other large scale data breaches. </p> 
 
-<p align="justify">This applicaiton uses HTML5, CSS, Bootstrap 4, and JavaScript to create a strong, unique password.  When you push the "Generate" button, the program will create an array of arrays based on whether you want upper case letters, lower case letters, numbers, and/or special characters.  Then the password is created based on the length of the passwrod selected.  (All javascript alert/confirm are validated to ensure proper selection is made by the end-user.) Finally, the newly generated password is presented to the end-user through the viewport.</p> 
+<p align="justify">This applicaiton uses HTML5, CSS, Bootstrap 4, and JavaScript to create a strong, unique password.</p>
+
+<a align="justify">When the "Generate" button is pushed, the program will create an array of arrays based on choices for upper case letters, lower case letters, numbers, and/or special characters.</p>
+
+<a align="justify">Then the password is created based on the length of the passwrod selected.</a>
+
+<a align="justify">(All javascript alert/confirm are validated to ensure proper selection is made by the end-user.)</p>
+
+<a align="justify">Finally, the newly generated password is presented to the end-user through the viewport.</p> 
 
 Try the <a>[Password Generator](https://etorres-revature.github.io/Password_Generator/)</a>.
 
 ### Cyber-crime Consequences<a href="#footnote1"><sup>[1]</sup></a>
 
 1. :moneybag: Fnancial Costs :moneybag:
-    * compensating aff3ected customers :money_with_wings:
+    * compensating affected customers :money_with_wings:
     * incident response to investigate breach :money_with_wings:
     * investment in new security measures :money_with_wings:
     * legal fees :money_with_wings:
@@ -34,8 +42,8 @@ Try the <a>[Password Generator](https://etorres-revature.github.io/Password_Gene
 
 | Tip | Explanation<a href="#footnote2"><sup>[2]</sup></a> |
 |-----|-------------|
-| LONG | the longer the better, but at lesat 10 characters long |
-| RANDOM | if your letter cominbaitons are not in the dictionary, they are not published |
+| LONG | the longer the better, but at least 10 characters long |
+| RANDOM | if your letter combinations are not in the dictionary, they are not published |
 | VARIETY | mix up special symbols and numbers with both capital and lower case letters |
 | NON-OBVIOUS | not information that is easily discoverable -- date of birth, anniversary, address, high school, etc. |
 | UNIQUE | use one password for each account |
@@ -76,7 +84,7 @@ Bootstrap 4 content borrowed from <a target="_blank" rel="noopener noreferrer">[
 #### JavaSctrit
 
 <p align="justify">
-JavaScript(JS) is one of the core technologies of the World Wide Web (along with HTML and CSS). It ienables interactive web pages and is an essential part of web applications.  JS is a multi-faceted, scripting language that provides versatility through Application Programming Interfaces (APIs) and Documetn Object Model (DOM) manipulation, amonng others.</p>
+JavaScript(JS) is one of the core technologies of the World Wide Web (along with HTML and CSS). It ienables interactive web pages and is an essential part of web applications.  JS is a multi-faceted, scripting language that provides versatility through Application Programming Interfaces (APIs) and Documetn Object Model (DOM) manipulation, among others.</p>
 
 JavaScript content above borred from <a target="_blank" rel="noopener noreferrer">[this page](https://en.wikipedia.org/wiki/JavaScript).</a>
 
