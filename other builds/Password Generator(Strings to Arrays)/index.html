@@ -4,31 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon/lock.png" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Password Generator</h1>
+        <h1>Password Transmogrifier</h1>
+        <img id="transmogrifier" src="./assets/images/transmogrifier_zap.png" alt="Calvin's transmogrifier | ZAP!!" />
       </header>
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2>Generate a Password:</h2>
         </div>
         <div class="card-body">
           <textarea
             readonly
             id="password"
-            placeholder="Your Secure Password"
+            placeholder="Press the 'Generate Password' button below to create your new, secure password"
             aria-label="Generated Password"
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn">Generate</button>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+
+    <footer class="sticky-footer" style="display: contents; border-color: black; background-color: grey">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h3>
+                      Visit me on social media:
+                  </h3>
+              </div>
+          </div>
+          <!-- footer social media classes and styling from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+          <div class="row">
+              <div class="col" id="social-media">
+                  <a href="https://www.linkedin.com/in/ericdtorres/" class="fa fa-linkedin"target="_blank" rel="noopener noreferrer"></a>
+                  <a href="https://github.com/etorres-revature" class="fa fa-github" target="_blank" rel="noopener noreferrer"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  <p id="e_mail">E-mail: <a href="mailto:etorresnotary@gmail.com">etorresnotary@gmail.com</a></p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  <p id="copyright">
+                      &copy; 2020 Eric D. Torres Productions
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="./script.js"></script>
+
   </body>
 </html>
