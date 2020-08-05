@@ -1,12 +1,8 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html,
-body,
-.wrapper {
+html, body, .wrapper {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -14,17 +10,18 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: black;
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 header {
   text-align: center;
+  text-decoration: underline;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
@@ -32,23 +29,34 @@ header {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  border-radius: 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px; */
+  border: 2px solid red;
+  /* color: hsl(206, 17%, 28%); */
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  background-image: url(./assets/images/background/blue-green-binary-background-password.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-header {
+color: greenyellow;
+font-weight: 750;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: plum;
   height: 2px;
 }
+
 
 .card-body {
   min-height: 100px;
@@ -62,7 +70,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: plum;
   height: 2px;
 }
 
@@ -74,11 +82,10 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: darkgray;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: darkgreen;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -118,13 +125,55 @@ button[disabled] {
   overflow: hidden;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: .65;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-right: 5px;
+}
+
+.fa-github {
+  background: #2c4762;
+  color: white;
+  margin-left: 5px;
+}
+
+#copyright {
+  color: white;
+  text-align: center;
+}
+
+#social-media {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+#e_mail {
+  color: white;
+  text-align: center
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
-
   #password {
     font-size: 1rem;
   }
