@@ -90,7 +90,9 @@ JavaScript content borrowed from <a target="_blank" rel="noopener noreferrer">[t
 
 ## Author :sunglasses:
 
-Content and design created by :green_heart: Eric D. Torres :green_heart:.  The author can be reached at etorresnotary@gmail.com. 
+Content and design created by :green_heart: Eric D. Torres :green_heart:.  
+
+The author can be reached at etorresnotary@gmail.com. 
 
 ###### License
 
