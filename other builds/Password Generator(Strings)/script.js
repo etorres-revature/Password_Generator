@@ -26,7 +26,7 @@ function writePassword() {
 
 function generatePassword() {
   let newPassword = "";
-  for (let i = 0; i < passwordString; i++){
+  for (let i = 0; i < passLength; i++){
   let randomInt = Math.floor(Math.random()*passwordString.length);
   newPassword = newPassword + passwordString.charAt(randomInt);
   }
