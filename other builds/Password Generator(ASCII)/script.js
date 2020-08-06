@@ -1,9 +1,35 @@
-//Strings to populate password
-let letters = "abcdefghijklmnopqrstuvwxyz";
-let number = "1234567890";
-let special = "!@#$%^&*()~><?/][}{";
-let passwordString = "";
-let passLength = 8;
+
+let passLenght = 8;
+let newString = "";
+
+function createLowerString() {
+  let lowerString = "";
+  for (let i = 97; i < 123; i++) {
+    lowerString += String.fromCharCode(i);
+    console.log(lowerString);
+  }
+  return lowerString;
+};
+function createUpperString() {
+  let upperString = "";
+  for (let i = 65; i < 91; i++) {
+    // let newUpper = String.charCodeAt(ASCII);
+    upperString += String.fromCharCode(i);
+    console.log(upperString);
+  }
+  return upperString;
+};
+function createNumberString() {
+  numberString = "";
+  for (let i = 48; i < 58; i++) {
+    // let newNumber = String.CharCodeAt(ASCII);
+    numberString += String.fromCharCode(i);
+    console.log(numberString);
+  }
+  return numberString;
+};
+
+let special = "!@#$%^&*()~}{][?><"
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -17,59 +43,68 @@ function writePassword() {
   var falsePrompts = "You have not chosen any characters with which to create the new password"
   var passwordText = document.querySelector("#password");
   if (truePrompts) {
-  var password = generatePassword();
-  passwordText.value = password;
+    var password = generatePassword();
+    passwordText.value = password;
   } else {
     passwordText.value = falsePrompts;
   }
 }
 
-function generatePassword() {
+function generatePassword(lower, upper, numbers, special, length) {
   let newPassword = "";
-  for (let i = 0; i < passwordString.length; i++){
-  let randomInt = Math.floor(Math.random()*passwordString.length);
-  newPassword = newPassword + passwordString.charAt(randomInt);
-  }
-  return newPassword;
+  for (let i = 0; i < passLength; i++) {
+    let randomInt = Math.floor(Math.random() * newString.length);
+    newPassword += newString.charAt(randomInt);
+}
+return newPassword;
 }
 
 function prompts() {
-  passwordString = "";
+  newString = "";
   passLength = prompt("How long should your password be?\nChoose a number between 8 and 128.");
   if (isNaN(passLength)) {
     return false;
   } else if (passLength < 8 || passLength > 128) {
     alert("Passwords must be a minimum of 8 characters \nand a maximum of 128 charactrers")
   } else {
-  let useUpper = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
-  if(useUpper) {
-    passwordString = passwordString.concat(letters.toUpperCase());
-    console.log(passwordString);
+    let useUppers = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
+    if (useUppers) {
+      newString = newString.concat(createUpperString());
+      console.log(newString);
+    }
+    let useLowers = confirm("Do you want your password to have lower case letters?\n'Ok' for yes and 'Cancel' for no.");
+    if (useLowers) {
+      newString = newString.concat(createLowerString());
+      console.log(newString);
+    }
+    let useNumbers = confirm("Do you want your password to have numbers?\n'Ok' for yes and 'Cancel' for no.");
+    if (useNumbers) {
+      newString = newString.concat(createNumberString());
+      console.log(newString);
+    }
+    let useSpecials = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
+    if (useSpecials) {
+      newString = newString.concat(special);
+      console.log(newString);
+    }
+    return true;
   }
-  let useLower = confirm("Do you want your password to have lower case letters?\n'Ok' for yes and 'Cancel' for no.");
-  if (useLower) {
-    passwordString = passwordString.concat(letters);
-    console.log(passwordString)
-  }
-  let useNumbers = confirm("Do you want your password to have numbers?\n'Ok' for yes and 'Cancel' for no.");
-  if (useNumbers){
-    passwordString = passwordString + number;
-    console.log(passwordString);
-  }
-  let useSpecials = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
-  if (useSpecials) {
-    passwordString = passwordString + special;
-    console.log(passwordString);
-  } 
-  return true;
-}
 }
 
-// function stringConcat() {
-// let string1 = "this is a string";
-// console.log(string1);
-// let string2 = "this is also a string";
-// console.log(string2);
-// let string3 = string1.concat(" ", string2);
-// console.log(string3);
-// }
+/*
+//generate random lower case letter, upper case letter, number, or symbol (upper case letter, lower case letter, and numbers generated from ASCII)
+function getRandomLowr() {
+  return String.fromCharCode(Math.floor(Math.random()*26)-97);
+}
+function getRandomUpper() {
+  return String.fromCharCode(Math.floor(Math.random()*26)+65);
+}
+
+function getRandomNumber() {
+  return String.fromCharCode(Math.floor(Math.random()*10)+48);
+}
+
+function getRandomSymbol() {
+  const symbols = "!@#$%^&*()~{}?><[]";
+  return symbols[Math.floor(Math.random()*symbols.length)];
+}*/
