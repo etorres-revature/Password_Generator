@@ -86,7 +86,7 @@ Bootstrap 4 content borrowed from <a target="_blank" rel="noopener noreferrer">[
 <p align="justify">
 JavaScript(JS) is one of the core technologies of the World Wide Web (along with HTML and CSS). It ienables interactive web pages and is an essential part of web applications.  JS is a multi-faceted, scripting language that provides versatility through Application Programming Interfaces (APIs) and Documetn Object Model (DOM) manipulation, among others.</p>
 
-JavaScript content above borred from <a target="_blank" rel="noopener noreferrer">[this page](https://en.wikipedia.org/wiki/JavaScript).</a>
+JavaScript content borrowed from <a target="_blank" rel="noopener noreferrer">[this page](https://en.wikipedia.org/wiki/JavaScript).</a>
 
 ## Author :sunglasses:
 
