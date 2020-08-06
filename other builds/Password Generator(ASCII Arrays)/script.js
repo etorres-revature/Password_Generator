@@ -1,35 +1,35 @@
 
 let passLenght = 8;
-let newString = "";
+let newArray = "";
 
-function createLowerString() {
-  let lowerString = "";
+function createLowerArray() {
+  let lowerArray = "";
   for (let i = 97; i < 123; i++) {
-    lowerString += String.fromCharCode(i);
-    console.log(lowerString);
+    lowerArray += String.fromCharCode(i);
+    console.log(lowerArray);
   }
-  return lowerString;
+  return lowerArray.split();
 };
-function createUpperString() {
-  let upperString = "";
+function createUpperArray() {
+  let upperArray = [];
   for (let i = 65; i < 91; i++) {
     // let newUpper = String.charCodeAt(ASCII);
-    upperString += String.fromCharCode(i);
-    console.log(upperString);
+    upperArray += String.fromCharCode(i);
+    console.log(upperArray);
   }
-  return upperString;
+  return upperArray.split();
 };
-function createNumberString() {
-  numberString = "";
+function createNumberArray() {
+  numberArray = "";
   for (let i = 48; i < 58; i++) {
     // let newNumber = String.CharCodeAt(ASCII);
-    numberString += String.fromCharCode(i);
-    console.log(numberString);
+    numberArray += String.fromCharCode(i);
+    console.log(numberArray);
   }
-  return numberString;
+  return numberArray.split();
 };
 
-let special = "!@#$%^&*()~}{][?><"
+let special = "!@#$%^&*()~}{][?><".split();
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -52,15 +52,17 @@ function writePassword() {
 
 function generatePassword(lower, upper, numbers, special, length) {
   let newPassword = "";
+  // newArray.split("");
+  // console.log(newArray);
   for (let i = 0; i < passLength; i++) {
-    let randomInt = Math.floor(Math.random() * newString.length);
-    newPassword += newString.charAt(randomInt);
+    let randomInt = Math.floor(Math.random() * newArray.length);
+    newPassword += newArray[randomInt];
 }
 return newPassword;
 }
 
 function prompts() {
-  newString = "";
+  newArray = "";
   passLength = prompt("How long should your password be?\nChoose a number between 8 and 128.");
   if (isNaN(passLength)) {
     return false;
@@ -69,24 +71,26 @@ function prompts() {
   } else {
     let useUppers = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
     if (useUppers) {
-      newString = newString.concat(createUpperString());
-      console.log(newString);
+      newArray = newArray.concat(createUpperArray());
+      console.log(newArray);
     }
     let useLowers = confirm("Do you want your password to have lower case letters?\n'Ok' for yes and 'Cancel' for no.");
     if (useLowers) {
-      newString = newString.concat(createLowerString());
-      console.log(newString);
+      newArray = newArray.concat(createLowerArray());
+      console.log(newArray);
     }
     let useNumbers = confirm("Do you want your password to have numbers?\n'Ok' for yes and 'Cancel' for no.");
     if (useNumbers) {
-      newString = newString.concat(createNumberString());
-      console.log(newString);
+      newArray = newArray.concat(createNumberArray());
+      console.log(newArray);
     }
     let useSpecials = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
     if (useSpecials) {
-      newString = newString.concat(special);
-      console.log(newString);
+      newArray = newArray.concat(special);
+      console.log(newArray);
     }
+    newArray.replace(",", " ");
+    console.log(newArray);
     return true;
   }
 }
