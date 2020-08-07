@@ -16,6 +16,9 @@ let passwordLength = 8;
 //array to hold choices from prompts
 let choice = [];
 
+//creating variable to contain the textarea to display the new password and other messages
+var passwordText = document.querySelector("#password");
+
 //function to choose random lower case letter from lower array
 //function getRandomLower() {
 //  return lower[Math.floor(Math.random() * lower.length)];
@@ -79,6 +82,8 @@ function generatePassword() {
 }
 
 function passwordCharacters() {
+  //clearing out the password textarea display
+  passwordText.value = ""
   //resets the choice array each time the passwordCharacters funciton runs
   //array is created outside of the function so that its value will be held even after the funciton has run
   choice = [];
