@@ -67,6 +67,7 @@ function writePassword() {
     }
   } 
   var password = generatePassword();
+  console.log(password);
   
   passwordText.value = password;
 
@@ -77,6 +78,7 @@ function generatePassword() {
   let randomIndex = Math.floor(Math.random() * newArray.length);
     newPassword = newPassword + newArray[randomIndex];
   }
+  console.log(newPassword);
     return newPassword;
 }
 

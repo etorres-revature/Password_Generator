@@ -19,8 +19,10 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  let prompts = userPrompts();
+  userPrompts();
   var password = generatePassword();
+  console.log(password)
+
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -28,10 +30,12 @@ function writePassword() {
 }
 
 function generatePassword() {
-  let newPassword;
+  let newPassword = [];
   for (let i = 0; i < passwordLength; i++) {
-    newPassword = newPassword + arrayChoices[Math.floor(Math.random() * arrayChoices.length)];
+    let randomInt = Math.floor(Math.random() * arrayChoices.length);
+    newPassword = newPassword + arrayChoices[randomInt];
   }
+  console.log(newPassword);
   return newPassword;
 }
 
