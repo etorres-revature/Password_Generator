@@ -46,7 +46,7 @@ generateBtn.addEventListener("click", writePassword);
 function writePassword() {
   //create a variable to collect the return from the passwordCharacters function, whcih will determine which characters are available for the new password
   var truePrompts = passwordCharacters();
-  var falsePrompts = "You have not chosen any characters with which to create the new password";
+  var falsePrompts = "Insufficient user entries to create new password.";
   //creating the variable associated with returning the new password to the text area in the HTML
   var passwordText = document.querySelector("#password");
   //if passwordCharacters returns true then this logic will run
@@ -91,7 +91,8 @@ function passwordCharacters() {
     return false;
     //creates validation for the passwordLength entry to ensure that the password is at least 8 characters and no more than 128
   } else if (passwordLength < 8 || passwordLength > 128) {
-    alert("Please input a valid password length\nminimum number of characters = 8\nmaximum number of characters = 128")
+    alert("Please input a valid password length.\nMinimum number of characters = 8\nMaximum number of characters = 128"); 
+    return false;
   } else {
     //logic uses confirms from here on out so no further validation is required since Boolean true/false values will be created
     //user will be asked to confirm (ok/cancel) if the password should contain lower case letters
@@ -119,6 +120,7 @@ function passwordCharacters() {
       choice = choice.concat(special);
     //logic for if all confirms are cancelled to alert user that they have to choose a character set to create the new password
     } else if (!hasLower && !hasUpper && !hasNumber && !hasSpecial) {
+      alert("You have not chosen characters with which to create the new password.");
       return false;
     }
     return true;

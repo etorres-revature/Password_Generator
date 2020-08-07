@@ -2,7 +2,6 @@ let charString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 let pLength = 8;
 let newCharString = "";
 
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
