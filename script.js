@@ -16,7 +16,7 @@ let passwordLength = 8;
 //array to hold choices from prompts
 let choice = [];
 
-//creating variable to contain the textarea to display the new password and other messages
+//creating variable to contain the textarea to display the new password and other messages in HTML
 var passwordText = document.querySelector("#password");
 
 //function to choose random lower case letter from lower array
@@ -47,11 +47,11 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input - this function is called from the Event Listner with the click foo the "Generate Password" button
 function writePassword() {
+  //clearing out the password textarea display
+  passwordText.value = "Press the 'Generate' button below to create your new, secure password";
   //create a variable to collect the return from the passwordCharacters function, whcih will determine which characters are available for the new password
   var truePrompts = passwordCharacters();
   var falsePrompts = "Insufficient user entries to create new password.";
-  //creating the variable associated with returning the new password to the text area in the HTML
-  var passwordText = document.querySelector("#password");
   //if passwordCharacters returns true then this logic will run
   if (truePrompts) {
     //creating variable to hold new password
@@ -82,21 +82,19 @@ function generatePassword() {
 }
 
 function passwordCharacters() {
-  //clearing out the password textarea display
-  passwordText.value = ""
   //resets the choice array each time the passwordCharacters funciton runs
   //array is created outside of the function so that its value will be held even after the funciton has run
   choice = [];
   //uses the passwordLength variable to display a prompt to get the users desired password length
   //variable is created outside of the function so that its value will be held even after the funciton has run
   passwordLength = prompt("Please choose a length for you password \nPasswords must be a minimum of 8 characters \nand a maximum of 128 characters.");
- //since the passwordLength must be a number this logic will alert the user to enter a number if he/she tries to enter a string value
+  //since the passwordLength must be a number this logic will alert the user to enter a number if he/she tries to enter a string value
   if (isNaN(passwordLength)) {
     alert("Please enter a numerical value.");
     return false;
     //creates validation for the passwordLength entry to ensure that the password is at least 8 characters and no more than 128
   } else if (passwordLength < 8 || passwordLength > 128) {
-    alert("Please input a valid password length.\nMinimum number of characters = 8\nMaximum number of characters = 128"); 
+    alert("Please input a valid password length.\nMinimum number of characters = 8\nMaximum number of characters = 128");
     return false;
   } else {
     //logic uses confirms from here on out so no further validation is required since Boolean true/false values will be created
@@ -117,13 +115,13 @@ function passwordCharacters() {
     //if logic so that when hasNumber variable is true the lower case array of letters will be added to the choice array
     if (hasNumber) {
       choice = choice.concat(number);
-    } 
+    }
     //user will be asked to confirm (ok/cancel) if password should contain special characters
     let hasSpecial = confirm("Do you want your password to contain special characters\n OK = YES and Cancel =NO")
     //if logic so that when hasSpecial variabgle is true the lower case array of letter will be added to the choice array
     if (hasSpecial) {
       choice = choice.concat(special);
-    //logic for if all confirms are cancelled to alert user that they have to choose a character set to create the new password
+      //logic for if all confirms are cancelled to alert user that they have to choose a character set to create the new password
     } else if (!hasLower && !hasUpper && !hasNumber && !hasSpecial) {
       alert("You have not chosen characters with which to create the new password.");
       return false;
