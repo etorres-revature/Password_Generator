@@ -68,19 +68,34 @@ function writePassword() {
 function generatePassword() {
   //creating password variable scoped to this funciton to hold the new password
   var password = "";
+  // choice = choice.forEach().join("")
+  let cleanArray = [];
+  for (let i = 0; i <choice.length; i++) {
+    for (let j = 0; j < choice[i].length; j++){
+      cleanArray += choice[i][j];
+      console.log(cleanArray);
+    }
+  }
+  // console.log(choice);
   //for loop to create the password of the appropriate length as dictated through the passwordCharacters function
   for (var i = 0; i < passwordLength; i++) {
     //variable to hold each new random number
     //math floor will fut off any decimals and math random will choose a random interger between 0 and .99999
     //multiplied by the choice.length attribute to give it an index to choose a character
-    var randomCharacter = Math.floor(Math.random() * 26)
+    // var randomCharacter = Math.floor(Math.random() * 26)
     //taking the password variable form the function and concatenating it with the character in the chocie array at randomCharacter index
-    var randomChoiceIndex = Math.floor(Math.random() * choice.length)
-    password = password + choice[randomChoiceIndex][randomCharacter];
+    var randomChoiceIndex = Math.floor(Math.random() * cleanArray.length)
+    password = password + cleanArray[randomChoiceIndex] //.splice(randomCharacter);
   }
   //having the return of the function to be the password, which will go into the newPassword variable in writePassword funciton above
   return password;
 }
+
+// function cleanChoiceArray() {
+  // let choiceArray = choice;
+  // choiceArray.join("");
+  // return choiceArray;
+// }
 
 function passwordCharacters() {
   //resets the choice array each time the passwordCharacters funciton runs

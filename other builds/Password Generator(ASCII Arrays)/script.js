@@ -1,4 +1,3 @@
-
 let passLenght = 8;
 let newArray = "";
 

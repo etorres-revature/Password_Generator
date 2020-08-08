@@ -14,7 +14,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  let runProgram = userPrompts();
+  userPrompts();
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -23,7 +23,7 @@ function writePassword() {
 }
 
 function generatePassword() {
-  let newPassword;
+  let newPassword = "";
   for (let i = 0; i < passwordLength; i++) {
 newPassword = newPassword + strChoices.charAt(Math.floor(Math.random() * strChoices.length));
   }
