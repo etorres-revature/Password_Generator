@@ -4,9 +4,13 @@
 
 <p align="justify">This applicaiton uses HTML5, CSS, Bootstrap 4, and JavaScript to create a strong, unique password.</p>
 
+![Password Generator - no password](./assets/images/readme_screenshots/password-generator-blank.png)
+
 <a align="justify">When the "Generate" button is pushed, the program will create an array of arrays based on choices for upper case letters, lower case letters, numbers, and/or special characters.</p>
 
 <a align="justify">Then the password is created based on the length of the passwrod selected.</a>
+![Password Generator - with password](./assets/images/readme_screenshots/password-generator-password.png)
+
 
 <a align="justify">(All javascript alert/confirm are validated to ensure proper selection is made by the end-user.)</p>
 
