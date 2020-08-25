@@ -8,7 +8,7 @@ function createLowerArray() {
     console.log(lowerArray);
   }
   return lowerArray.split();
-};
+}
 function createUpperArray() {
   let upperArray = [];
   for (let i = 65; i < 91; i++) {
@@ -17,7 +17,7 @@ function createUpperArray() {
     console.log(upperArray);
   }
   return upperArray.split();
-};
+}
 function createNumberArray() {
   numberArray = "";
   for (let i = 48; i < 58; i++) {
@@ -26,7 +26,7 @@ function createNumberArray() {
     console.log(numberArray);
   }
   return numberArray.split();
-};
+}
 
 let special = "!@#$%^&*()~}{][?><".split();
 
@@ -39,7 +39,8 @@ generateBtn.addEventListener("click", writePassword);
 // Write password to the #password input
 function writePassword() {
   var truePrompts = prompts();
-  var falsePrompts = "You have not chosen any characters with which to create the new password"
+  var falsePrompts =
+    "You have not chosen any characters with which to create the new password";
   var passwordText = document.querySelector("#password");
   if (truePrompts) {
     var password = generatePassword();
@@ -56,34 +57,46 @@ function generatePassword(lower, upper, numbers, special, length) {
   for (let i = 0; i < passLength; i++) {
     let randomInt = Math.floor(Math.random() * newArray.length);
     newPassword += newArray[randomInt];
-}
-return newPassword;
+  }
+  return newPassword;
 }
 
 function prompts() {
   newArray = "";
-  passLength = prompt("How long should your password be?\nChoose a number between 8 and 128.");
+  passLength = prompt(
+    "How long should your password be?\nChoose a number between 8 and 128."
+  );
   if (isNaN(passLength)) {
     return false;
   } else if (passLength < 8 || passLength > 128) {
-    alert("Passwords must be a minimum of 8 characters \nand a maximum of 128 charactrers")
+    alert(
+      "Passwords must be a minimum of 8 characters \nand a maximum of 128 charactrers"
+    );
   } else {
-    let useUppers = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
+    let useUppers = confirm(
+      "Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no."
+    );
     if (useUppers) {
       newArray = newArray.concat(createUpperArray());
       console.log(newArray);
     }
-    let useLowers = confirm("Do you want your password to have lower case letters?\n'Ok' for yes and 'Cancel' for no.");
+    let useLowers = confirm(
+      "Do you want your password to have lower case letters?\n'Ok' for yes and 'Cancel' for no."
+    );
     if (useLowers) {
       newArray = newArray.concat(createLowerArray());
       console.log(newArray);
     }
-    let useNumbers = confirm("Do you want your password to have numbers?\n'Ok' for yes and 'Cancel' for no.");
+    let useNumbers = confirm(
+      "Do you want your password to have numbers?\n'Ok' for yes and 'Cancel' for no."
+    );
     if (useNumbers) {
       newArray = newArray.concat(createNumberArray());
       console.log(newArray);
     }
-    let useSpecials = confirm("Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no.");
+    let useSpecials = confirm(
+      "Do you want your password to have upper case letters?\n'Ok' for yes and 'Cancel' for no."
+    );
     if (useSpecials) {
       newArray = newArray.concat(special);
       console.log(newArray);
