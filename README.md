@@ -1,4 +1,4 @@
-# :lock: Password_Generator :key:
+# :lock: [Password_Generator](https://etorres-revature.github.io/Password_Generator/) :key:
 
 <p align="justify">As technology has become more ubiquitous in our everyday lives, so to has the proliferation of cyber-crime in the form of malware, ransomware, and other large scale data breaches. </p> 
 
