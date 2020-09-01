@@ -16,7 +16,7 @@
 
 <a align="justify">Finally, the newly generated password is presented to the end-user through the viewport.</p> 
 
-Try the <a>[Password Generator](https://etorres-revature.github.io/Password_Generator/)</a>.
+Try the [Password Generator](https://etorres-revature.github.io/Password_Generator/).
 
 ### Cyber-crime Consequences<a href="#footnote1"><sup>[1]</sup></a>
 
