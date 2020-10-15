@@ -2,13 +2,13 @@
 
 <p align="justify">As technology has become more ubiquitous in our everyday lives, so to has the proliferation of cyber-crime in the form of malware, ransomware, and other large scale data breaches. </p> 
 
-<p align="justify">This applicaiton uses HTML5, CSS, Bootstrap 4, and JavaScript to create a strong, unique password.</p>
+<p align="justify">This application uses HTML5, CSS, Bootstrap 4, and JavaScript to create a strong, unique password.</p>
 
 ![Password Generator - no password](./assets/images/readme_screenshots/password-generator-blank.png)
 
 <a align="justify">When the "Generate" button is pushed, the program will create an array of arrays based on choices for upper case letters, lower case letters, numbers, and/or special characters.</p>
 
-<a align="justify">Then the password is created based on the length of the passwrod selected.</a>
+<a align="justify">Then the password is created based on the length of the password selected.</a>
 ![Password Generator - with password](./assets/images/readme_screenshots/password-generator-password.png)
 
 
@@ -20,14 +20,14 @@ Try the [Password Generator](https://etorres-revature.github.io/Password_Generat
 
 ### Cyber-crime Consequences<a href="#footnote1"><sup>[1]</sup></a>
 
-1. :moneybag: Fnancial Costs :moneybag:
+1. :moneybag: Financial Costs :moneybag:
     * compensating affected customers :money_with_wings:
     * incident response to investigate breach :money_with_wings:
     * investment in new security measures :money_with_wings:
     * legal fees :money_with_wings:
     * regulatory penalties :money_with_wings:
 
-2. :facepunch: Reputatoinal Damage :facepunch:
+2. :facepunch: Reputational Damage :facepunch:
     * loss of customers :thumbsdown:
     * bad word of mouth :thumbsdown:
     * long-lasting  :thumbsdown:
@@ -51,7 +51,7 @@ Try the [Password Generator](https://etorres-revature.github.io/Password_Generat
 | VARIETY | mix up special symbols and numbers with both capital and lower case letters |
 | NON-OBVIOUS | not information that is easily discoverable -- date of birth, anniversary, address, high school, etc. |
 | UNIQUE | use one password for each account |
-| MANAGER | use a service that auto-generates and stores strong paswords on your behalf in one centralized, encrypted location that only you can access with the master password |
+| MANAGER | use a service that auto-generates and stores strong passwords on your behalf in one centralized, encrypted location that only you can access with the master password |
 | PRIVATE |don't share your password with anyone else |
 | ROTATE | the more sensitive information is, the more often you should change your password |
 
@@ -61,7 +61,7 @@ Try the [Password Generator](https://etorres-revature.github.io/Password_Generat
 #### HTML5
 
 <p align="justify">
-HTML5 is a markup language used for structuring and presenting content on the World Wide Web.  The goals are to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices; and to remain backward compatible to older software.  Many new symantic features are included.
+HTML5 is a markup language used for structuring and presenting content on the World Wide Web.  The goals are to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices; and to remain backward compatible to older software.  Many new symantec features are included.
 </p>
 
 HTML5 content borrowed from <a target="_blank" rel="noopener noreferrer">[this page](https://en.wikipedia.org/wiki/HTML5).</a>
@@ -72,7 +72,7 @@ HTML5 content borrowed from <a target="_blank" rel="noopener noreferrer">[this p
 Cascading Style Sheets (CSS) is a stylesheet language used for describing the presentation of a document written in a markup language (such as HTML5).  CSS is designed to enable the separation of presentation and content; including layout, colors, and fonts.  This separation improves content accessibility to provide more flexibility and control in the specification of presentation characteristics, enabling multiple web pages to share formatting by specifying relevant CSS in a separate file, which reduces complexity and repetition in the structural content (HTML), as well as enabling the file to be cached to improve the page load speed between the pages that share the file and its formatting.
 </p>
 <p align="justify">
-Separation of formating and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice, and on Braille-based tactile devices.  
+Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice, and on Braille-based tactile devices.  
 </p>
 
 CSS content borrowed from <a target="_blank" rel="noopener noreferrer">[this page](https://en.wikipedia.org/wiki/Cascading_Style_Sheets).</a>
